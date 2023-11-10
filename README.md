@@ -18,7 +18,9 @@
 - Advanced Details -> IAM 생성
   역할 생성 (test-role-bastion)
 
+
 3. 재부팅 하더라도 public ip가 달라지지 않게 eip 생성 및 연결
+
 
 4. Launch Template 생성
 - test-lt-webapp (예시본)
@@ -30,9 +32,11 @@
 - Advanced Details
   시작 시 실행할 명렁어 작성
 
+
 5. Auto Scaling Group 생성
 - test-asg-webapp (예시본)
 - Network > vpc 선택 및 private subnet a, b 선택
+
 
 6. Load Balancer 생성
 - HTTP를 위한 Application load balancer
@@ -43,11 +47,14 @@
 - Desired capacity | Minimum capacity | Maximum capacity 설정
 - Scaling policies -> Target tracking으로 하고 적절한 이름을 입력 test-policy-alb (예시본) | networkout bytes 1K == 1024 설정 (예시) | 0 seconds 설정
 
+
 7. ALB 접근 제한 설정
 - Load Balancer -> Security - > Security ID 인바운드 권한 설정 : HTTP Ipv4 0.0.0.0/0 설정
+
 
 8. ASG Scaling policy 설정
 - Auto Scaling Groups -> Automatic scaling -> Edit을 눌러 수정 : Metric type 설정 | Target Group and Target Value 등 설정 (예시 1000, 0 seconds) -> 몇분 후 서버 개수 Down
 - 로드 밸런서 DNS 접속
+
 
 9. 리소스 삭제
