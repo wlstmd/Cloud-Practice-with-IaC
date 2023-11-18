@@ -15,7 +15,7 @@
 - Security group name: test-sg-bastion
 - Security rules: ssh, anywhere
 - Storage 8GiB gp3
-- Advanced Details -> IAM 생성 (EC2 -> adminaccess)
+- Advanced Details -> IAM 생성 (EC2 -> AdministratorAccess)
   역할 생성 (test-role-bastion)
 
 
