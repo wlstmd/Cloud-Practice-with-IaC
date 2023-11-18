@@ -28,6 +28,7 @@
 - Quick Start -> Amazon Linux 2023 AMI x86
 - 어플리케이션 서버로 t3a.micro를 사용하고 SSH로 접속할 것이 아니기 때문에 Key pair X
 - Subnet 자동설정 -> 지정 X
+- wsi-sg-webapp SG이름 (예시)
 - Security Group은 80번 포트로 0.0.0.0/0
 - Advanced Details
   시작 시 실행할 명렁어 작성
