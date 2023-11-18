@@ -4,7 +4,7 @@
 1. 이미 있는 기본 VPC delete 및 VPC 생성
 
 2. EC2 Instance 생성 및 조건이름에 맞는 key pair 생성
-- Name: test(예시)
+- Name: test-i-bastion(예시)
 - OS: Amazon Linux 2023 AMI
 - Architecture: x86
 - Instance Type: t3a.micro
@@ -15,7 +15,7 @@
 - Security group name: test-sg-bastion
 - Security rules: ssh, anywhere
 - Storage 8GiB gp3
-- Advanced Details -> IAM 생성
+- Advanced Details -> IAM 생성 (EC2 -> adminaccess)
   역할 생성 (test-role-bastion)
 
 
@@ -40,6 +40,7 @@
 
 6. Load Balancer 생성
 - HTTP를 위한 Application load balancer
+- 이름 지정 (test-alb-webapp)
 - 인터넷 공개용 (internet-facing)으로 선택
 - 로드 벨런서는 외부에서 접속이 가능해야 함으로 둘다 public 서브넷으로 선택
 - Target group 설정 포트 : 80 | Create target group -> test-tg-webapp (예시본)
