@@ -62,7 +62,5 @@
 9. 리소스 삭제
 - IAM Account alias 생성
 - Cloud Formation -> Create Stack
-``` bash
-https://nukeme.s3.amazonaws.com/run
-```
+- s3링크 입력
 - 권한 생성 동의 후 Submit
