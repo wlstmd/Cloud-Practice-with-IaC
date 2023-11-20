@@ -1,4 +1,4 @@
-# Cloud-Practice-with-IaC
+# 클라우드 기능경기대회 선발전
 클라우드 기능경기대회 선발전 대비
 
 1. 이미 있는 기본 VPC delete 및 VPC 생성
