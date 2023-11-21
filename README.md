@@ -64,3 +64,21 @@
 - Cloud Formation -> Create Stack
 - s3링크 입력
 - 권한 생성 동의 후 Submit
+
+<hr></hr>
+서버 테스트
+```bash
+#!/bin/bash
+
+for ((i=0; i<1000; i++)); do
+    # 서버 시작 명령어
+    ./start_server.sh
+done
+```
+
+```bash
+scp script.sh ec2-user@your_instance_ip:/path/to/destination
+```
+
+
+  
