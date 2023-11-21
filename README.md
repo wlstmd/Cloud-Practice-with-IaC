@@ -67,20 +67,21 @@
 
 <hr></hr>
 서버 테스트
-```bash
+
+```
 #!/bin/bash
 
-for ((i=0; i<1000; i++)); do
-    # 서버 시작 명령어
-    ./start_server.sh
-done
-
-scp script.sh ec2-user@your_instance_ip:/path/to/destination
-
-ssh ec2-user@your_instance_ip
-cd /path/to/destination
-chmod +x script.sh
-./script.sh
+  for ((i=0; i<1000; i++)); do
+      # 서버 시작 명령어
+      ./start_server.sh
+  done
+  
+  scp script.sh ec2-user@your_instance_ip:/path/to/destination
+  
+  ssh ec2-user@your_instance_ip
+  cd /path/to/destination
+  chmod +x script.sh
+  ./script.sh
 ```
 
 
