@@ -84,5 +84,11 @@
   ./script.sh
 ```
 
+```
+sudo vim /etc/ssh/sshd_config
+sudo systemctl restart sshd
+sudo systemctl status sshd
+```
+
 
   
