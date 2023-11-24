@@ -83,7 +83,7 @@
   chmod +x script.sh
   ./script.sh
 ```
-
+포트번호 변경하기
 ```
 sudo vim /etc/ssh/sshd_config
 sudo systemctl restart sshd
