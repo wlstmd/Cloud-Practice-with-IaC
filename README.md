@@ -89,6 +89,21 @@ sudo vim /etc/ssh/sshd_config
 sudo systemctl restart sshd
 sudo systemctl status sshd
 ```
+ec2화면
+```
+#!/bin/bash
 
+# Apache HTTP Server 설치
+yum install -y httpd
 
+# Apache 서비스 시작
+service httpd start
+
+# /ip.html 파일 생성 및 IP 주소 쓰기
+echo hostname -I > /var/www/html/ip.html
+
+# /date.html 파일 생성 및 현재 시간 쓰기
+date=$(TZ=Asia/Seoul date +"%Y-%m-%d:%H:%M")
+echo $date > /var/www/html/date.html
+```
   
