@@ -100,7 +100,7 @@ yum install -y httpd
 service httpd start
 
 # /ip.html 파일 생성 및 IP 주소 쓰기
-echo hostname -I > /var/www/html/ip.html
+echo $(hostname -I) > /var/www/html/ip.html
 
 # /date.html 파일 생성 및 현재 시간 쓰기
 date=$(TZ=Asia/Seoul date +"%Y-%m-%d:%H:%M")
