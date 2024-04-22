@@ -107,3 +107,10 @@ date=$(TZ=Asia/Seoul date +"%Y-%m-%d:%H:%M")
 echo $date > /var/www/html/date.html
 ```
   
+# html
+```
+    <script>
+      document.write(window.location.hostname);
+      document.write(new Date().toString());
+    </script>
+```
